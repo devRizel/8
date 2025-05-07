@@ -140,27 +140,29 @@ body.dark-mode a.icon {
         <div data-role="content" class="animated-heading">
             <input id="searchInput" list="searchOptions" placeholder="Search..." />
             <datalist id="searchOptions">
-              <option value="Main Dish">
-              <option value="Food">
-              <option value="Drinks">
-            </datalist>
-            <script>
-              const input = document.getElementById('searchInput');
-              input.addEventListener('change', () => {
-                const value = input.value;
-                const links = {
+                <option value="Main Dish">
+                <option value="Food">
+                <option value="Beef Steak">
+                <option value="Sea Foods">
+              </datalist>
+              <script>
+                const input = document.getElementById('searchInput');
+                input.addEventListener('change', () => {
+                  const value = input.value;
+                  const links = {
                     "Main Dish": "maindish.html",
-                  "Food": "food.html",
-                  "Drinks": "drinks.html"
-                };
-                if (links[value]) {
-                  window.location.href = links[value];
-                }
-              });
-            </script>
+                    "Food": "food.html",
+                    "Beef Steak": "beefsteak.html",
+                    "Sea Foods": "seafoods.html"
+                  };
+                  if (links[value]) {
+                    window.location.href = links[value];
+                  }
+                });
+              </script>
         <br>
             <div id="extraContent">
-                <p style="font-size: 30px; text-align: center;">Tomgu Food and Drinks Menu
+                <p style="font-size: 30px; text-align: center;">Panyang Menu
 
                 </p>
             </div>
